@@ -30,25 +30,6 @@ html {
 .navbar nav.menu{
     display: none;
 }
-/* .navbar nav.menu{
-    font-size: 20px;
-    position: absolute;
-    top: 50px;
-    padding: 20px 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--BlueColor);
-    color: #fff;
-    border-radius: 10px;
-}
-.toggle{
-    display: block;
-}
-.disappear{
-    display: none;
-} */
 .navbar .logo{
     width: 55%;
 }
@@ -98,7 +79,6 @@ html {
         width: 100%;
       
 }
-
 .header .title-section h1{
     font-size: 1.7rem;
     font-weight:500;
@@ -119,7 +99,7 @@ html {
     background: #fff;
     margin-bottom: 30px;
     border-radius: 50px;
-    border-left: 2px solid var(--roseColor);
+    border-left: 3px solid var(--roseColor);
     box-shadow: 0px 12px 23px 0px rgba(0,0,0,0.1);
 }
 .header .email-section form{
@@ -137,8 +117,6 @@ html {
     color: var(--roseColor);
     text-align: right;
 }
-
-
 
 .header .people-section{
     display: flex;
@@ -181,28 +159,7 @@ html {
 .header .people-section .feedback span{
     font-size: .7rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* section-2 */
 .section-2{
     padding: 50px 0;
 }
@@ -325,6 +282,7 @@ html {
     font-size: .9rem;
     margin-bottom: 20px;
     font-size: 600;
+    line-height: 1.5;
 }
 .section-2 .part-2 .card .ReadMore{
     display: flex;
@@ -334,6 +292,7 @@ html {
     font-weight: 500;
     font-size: .8rem;
 }
+
 .CyanColor-1{
     background-color: #2FACFC;
 }
@@ -422,6 +381,7 @@ html {
     display: flex;
     flex-direction: column;
 }
+/* section-3 */
 #section_3_color{
     color: #fff;
 }
@@ -491,6 +451,7 @@ html {
     background-size: contain;
     margin-top: 40px;
 }
+/* section-4 */
 .section-4 {
     padding: 80px 0;
 }
@@ -630,6 +591,7 @@ html {
     width: 100%;
     height: 100%;
 }
+/* section-5 */
 .section-5{
     background-color: var(--bgColor);  
     padding: 100px 0;
@@ -683,6 +645,7 @@ html {
 .section-6{
     padding: 80px 0;
 }
+/* section-6 */
 .section-6 .turned-button {
     border: 1px solid #d6d6d6;
     padding: 3px;
@@ -862,6 +825,7 @@ html {
     color: #FCFDFF;
     border: 1px solid #C7D9FC;
 }
+/* section-8 */
 .section-8 .title{
     width: 65%;
     margin-bottom: 20px;
@@ -888,13 +852,20 @@ html {
 }
 /* footer */
 .footer{
-    padding: 80px 0;
+    padding: 80px 0 0 0;
     background-color: var(--bgColor);
 }
 .footer .footer-content{
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+.footer-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 .footer .footer-content .logo{
     margin-bottom: 20px;
@@ -933,15 +904,19 @@ html {
     margin-right:10px;
 }
 .footer .footer-content h5{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 20px 0;
     color: var(--BlueColor);
 }
 .footer .footer-content div{
     font-size: .8rem;
     margin-bottom: 5px;
-    color: #4D4F5C;
+    color: #48546A;
     font-weight: 500;
+}
+.company-pages div,
+.Support div{
+    cursor: pointer;
 }
 .footer .footer-content .content-text{
     display: flex;
@@ -967,8 +942,7 @@ html {
     color: #628BFA;
 }
 .footer .footer-content .Get-in-touch span{
-    font-size: .8rem;
-    font-weight: 500;
+    font-size: .7rem;
 }
 .m-r{
     margin-right: 5px;
@@ -979,26 +953,29 @@ html {
 }
 .footer .footer-1 .Get-in-touch{
     padding-bottom: 30px;
-    border-bottom: 2px solid #E1E5EC;
 }
 .footer .footer-2{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    border-top: 2px solid #E1E5EC;
     margin: 0 auto;
     margin-top: 20px;
+    padding: 50px 0;
+}
+.footer .footer-2 p{
+    font-size: .7rem;
+    width: 25%;
+    color: #48546A;
 }
 .footer .footer-2 aside{
     display: flex;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
+    align-self: center;
+    color: var(--BlueColor);
 }
 .footer .footer-2 button{
     display: flex;
     align-items: center;
-    justify-content: center;
     border-style: none;
     width: 200px;
     height: 45px;
@@ -1011,6 +988,10 @@ html {
     border: 1px solid #E1E5EC;
     justify-content: center;
 }
+.footer-flex-text{
+    display: flex;
+}
+
 .footer .footer-2 button:nth-of-type(1){
     margin-right: 10px;
     background-color: #fff;
@@ -1021,6 +1002,34 @@ html {
 }
 .footer .footer-2 button i{
     margin-right: 10px;
+}
+.footer .footer-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer .footer-2 p{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.footer .footer-2 button {
+    width: 150px;
+}
+.footer .footer-2 button div {
+   margin-bottom: 0;
+}
+.footer .top-arrow{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    padding: 10px;
+    background-color: var(--roseColor);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .2;
 }
 
 
@@ -1056,7 +1065,6 @@ html {
     .title {
         font-size: 1.8rem;
         margin-bottom: 20px;
-        width: 50%;
     }
     .section-2 .view-all-features {
         font-size: .9rem;
@@ -1071,7 +1079,7 @@ html {
     }
     .section-5 .download-app {
     width: 60%;
-}
+    }
     .section-6 .turned-button {
     width: 30%;
     }
@@ -1086,6 +1094,11 @@ html {
     .footer .footer-content .brand button:hover{
         color: var(--roseColor);
     } 
+    
+    .footer .footer-2 button {
+
+        width: 200px;
+    }
    
 }
 @media (min-width: 768px) {  
@@ -1187,18 +1200,16 @@ html {
         font-size: 1.1rem;
         margin-bottom: 10px;
     }
-    .footer .footer-content .Get-in-touch i
-    {
-        width: 35px;
-        height: 35px;
-    }
+  
     .m-r{
         height: 21px;
         width:21px;
     }
+   
     .footer .footer-content .Get-in-touch span {
-        font-size: 1rem;
-        font-weight: 500;
+    font-size: .9rem;
+    font-weight: 400;
+    cursor: pointer;
     }
    
     
@@ -1252,14 +1263,14 @@ html {
         justify-content: space-between;
     }
     .title{
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         text-align: left;
         margin-bottom: 10px;
         font-weight: 900;
     }
     .subtitle{
         color: #6b6b6c;
-        font-size: .8rem;
+        font-size: 1rem;
         text-align: left;
         margin-bottom: 20px;
     }
@@ -1411,6 +1422,10 @@ html {
 	.container {
 		width: 1140px;
 	}
+    /* nav */
+    .navbar nav a {
+        font-size: 1rem;
+    }
     /* section-1 */
     .section_1{
     background: var(--bgColor) url("../img/hero.png") no-repeat bottom right;
@@ -1422,6 +1437,11 @@ html {
     .header .title-section h1{
         font-size: 2.1rem;
     }
+    .header .people-section .feedback {
+        width: 70%;
+        left: -36px;
+    }
+    /* section-3 */
     .section-3 .part-1 .cards {
         width: 60%
     }
@@ -1443,10 +1463,18 @@ html {
     .section-4 .video-part .video-card {
         width: 65%;
     }
+    .section-3 .title,
+    .section-3 .subtitle{
+        text-align: center;
+    } 
     /* section-5 */
     /* section-5 */
   .section-5 .download-app {
     width: 30%;
+}
+.section-6 header .title,
+.section-6 header .subtitle{
+    text-align: center;
 }
 .section-6 .pricing-card .card, 
 .section-6 .pricing-card:nth-of-type(2) .card{
@@ -1470,13 +1498,33 @@ html {
     text-align: left;
 }
 
+.footer-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .footer .brand,
 .footer .Get-in-touch{
-    width: 25%;
+    width: 22%;
 }
+.footer .footer-2{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.footer .footer-2 p{
+    width: initial;
+    font-size: .9rem;
+}
+
 .footer .company-pages,
 .footer .Support{
-    width: 23%;
+    width: 20%;
 }
 .footer .footer-content .brand .social-media {
     justify-content: flex-start;
